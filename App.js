@@ -19,12 +19,16 @@ import { Image, View } from 'react-native';
 import Travel from './screens/week3/Travel';
 import Resort from './screens/week3/Resort';
 import Health from './screens/week5/Health';
+import Home from './screens/week6/Home';
+import FlatListExample from './screens/week6/FlatListExample';
 // import Ex10 from './screens/week2/Ex10';
 
 
 export default function App() {
   return (
-    <Health />
+    // <FlatListExample />
+    <Home />
+    // <Health />
     // <Welcome />
     // <Ex01 />
     // <Ex02/>
