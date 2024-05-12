@@ -21,13 +21,25 @@ import Resort from './screens/week3/Resort';
 import Health from './screens/week5/Health';
 import Home from './screens/week6/Home';
 import FlatListExample from './screens/week6/FlatListExample';
+import { NavigationContainer } from '@react-navigation/native';
+import HomeStack from './navigations/HomeStack';
+import BottomTab from './navigations/BottomTab';
+import RootStack from './navigations/RootStack';
+import { BottomTabBar } from '@react-navigation/bottom-tabs';
+import ChartKitScreen from './screens/week5/ChartKitScreen';
 // import Ex10 from './screens/week2/Ex10';
 
 
 export default function App() {
   return (
+    <NavigationContainer>
+            {/* <HomeStack /> */}
+            {/* <BottomTabBar /> */}
+            {/* <RootStack /> */}
+            <ChartKitScreen />
+    </NavigationContainer>
     // <FlatListExample />
-    <Home />
+    // <Home />
     // <Health />
     // <Welcome />
     // <Ex01 />
