@@ -27,17 +27,20 @@ import BottomTab from './navigations/BottomTab';
 import RootStack from './navigations/RootStack';
 import { BottomTabBar } from '@react-navigation/bottom-tabs';
 import ChartKitScreen from './screens/week5/ChartKitScreen';
+import { AuthContextProvider } from './hooks/AuthContextProvider';
 // import Ex10 from './screens/week2/Ex10';
 
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <AuthContextProvider> 
+      <NavigationContainer>
             {/* <HomeStack /> */}
             {/* <BottomTabBar /> */}
-            {/* <RootStack /> */}
-            <ChartKitScreen />
-    </NavigationContainer>
+            <RootStack />
+            {/* <ChartKitScreen /> */}
+      </NavigationContainer> 
+    </AuthContextProvider>
     // <FlatListExample />
     // <Home />
     // <Health />
